@@ -1,0 +1,19 @@
+.hotel-component {
+  text-align: start;
+  width: 250px;
+  box-shadow: 2px 2px 8px 1px rgb(168, 166, 166);
+  border-radius: 10px;
+}
+
+.hotel-img {
+  width: 250px;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+}
+
+.number {
+  background-color: #003b95;
+  padding: 4px;
+  color: white;
+  border-radius: 5px 5px 5px 0;
+}
