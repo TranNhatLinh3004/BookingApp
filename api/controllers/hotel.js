@@ -10,16 +10,19 @@ export const createHotel = async (req, res, next) => {
     next(err);
   }
 };
-
 export const updateHotel = async (req, res, next) => {
   try {
-    const updateHotel = await Hotel.findByIdAndUpdate(
-      req.params.id,
-      { $set: req.body },
-      { new: true }
+    // Using findByIdAndUpdate to find the hotel by its ID and update its fields
+    const updatedHotel = await Hotel.findByIdAndUpdate(
+      req.params.id, // req.params.id contains the ID of the hotel to be updated
+      { $set: req.body }, // Updating the hotel fields with the data from req.body
+      { new: true } // { new: true } returns the updated document after the update operation
     );
-    res.status(200).json(updateHotel);
+
+    // Sending the updated hotel as a JSON response
+    res.status(200).json(updatedHotel);
   } catch (err) {
+    // Handling any errors that might occur during the update process
     next(err);
   }
 };
@@ -44,7 +47,7 @@ export const getHotel = async (req, res, next) => {
 
 export const getHotels = async (req, res, next) => {
   try {
-    const hotels = await Hotel.find("");
+    const hotels = await Hotel.find({});
     res.status(200).json(hotels);
   } catch (err) {
     next(err);

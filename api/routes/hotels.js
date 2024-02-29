@@ -20,8 +20,8 @@ router.put("/:id", updateHotel);
 //DELETE
 router.delete("/:id", deleteHotel);
 //GET
-router.put("/:id", getHotel);
+router.get("/:id", getHotel);
 //GET ALL
-router.put("/", getHotels);
+router.get("/", getHotels);
 
 export default router;
