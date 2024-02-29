@@ -1,7 +1,7 @@
 import React from "react";
-import "./Hotel.css";
+import "./hotelcard.css";
 
-const Hotel = () => {
+const HotelCard = () => {
   return (
     <div className="hotel-component shadow-md">
       <img
@@ -34,4 +34,4 @@ const Hotel = () => {
   );
 };
 
-export default Hotel;
+export default HotelCard;

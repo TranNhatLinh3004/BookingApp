@@ -4,9 +4,10 @@ import Featured from "../../components/featured/Featured";
 import PropertyList from "../../components/propertyList/PropertyList";
 import MailList from "../../components/mailList/MailList";
 import Footer from "../../components/footer/Footer";
-import Hotel from "../../components/hotel/Hotel";
+
 import Navbar from "../../components/navbar/Navbar";
 import Header from "../../components/header/Header";
+import Hotel from "../../components/hotelcard/HotelCard";
 
 const Home = () => {
   return (
